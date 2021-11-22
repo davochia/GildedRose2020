@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 
 import fi.oulu.tol.sqat.GildedRose;
@@ -225,7 +226,7 @@ public class GildedRoseTest {
 		assertEquals("Backstage passes to a TAFKAL80ETC concert",50, quality);
 	}
 	
-//	
+
 //	@Test
 //	public void exampleTest12() {
 //		//create an inn, add an item, and simulate one day
@@ -260,6 +261,16 @@ public class GildedRoseTest {
 			int quality = items.get(i).getQuality();
 			assertEquals(items.get(i).name, items.get(i).getQuality(), quality);
 		}
+		
+		GildedRose.main(null);
+		
+//		 Assertions.assertAll(() -> assertEquals("+5 Dexterity Vest", 20, items.get(0).quality),
+//                 () -> assertEquals("Aged Brie", 0, items.get(1).quality),
+//                 () -> assertEquals("Elixir of the Mongoose", 7, items.get(2).quality),
+//                 () -> assertEquals("Sulfuras, Hand of Ragnaros", 80, items.get(3).quality),
+//                 () -> assertEquals("Backstage passes to a TAFKAL80ETC concert", 20, items.get(4).quality),
+//                 () -> assertEquals("Conjured Mana Cake", 6, items.get(5).quality));
+
 
 		
 	}
