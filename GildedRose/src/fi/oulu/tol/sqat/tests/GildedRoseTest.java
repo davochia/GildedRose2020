@@ -19,7 +19,7 @@ public class GildedRoseTest {
 
 	@Test
 	public void testTheTruth() {
-		System.out.println("OMGHAI!");
+		//System.out.println("OMGHAI!");
 
 		assertTrue(true);
 	}
@@ -175,7 +175,6 @@ public class GildedRoseTest {
 		
 	}
 	
-	
 	@Test
 	public void exampleTest9() {
 		//create an inn, add an item, and simulate one day
@@ -211,6 +210,7 @@ public class GildedRoseTest {
 	
 	@Test
 	public void exampleTest11() {
+
 		//create an inn, add an item, and simulate one day
 		GildedRose inn = new GildedRose();
         inn.setItem(new Item("Backstage passes to a TAFKAL80ETC concert", 4, 49));
@@ -225,7 +225,22 @@ public class GildedRoseTest {
 		assertEquals("Backstage passes to a TAFKAL80ETC concert",50, quality);
 	}
 	
-
+//	
+//	@Test
+//	public void exampleTest12() {
+//		//create an inn, add an item, and simulate one day
+//		GildedRose inn = new GildedRose();
+//        inn.setItem(new Item("Backstage passes to a TAFKAL80ETC concert", 11, 49));
+//
+//		inn.oneDay();
+//		
+//		//access a list of items, get the quality of the one set
+//		List<Item> items = inn.getItems();
+//		int quality = items.get(0).getQuality();
+//		
+//		//assert quality has decreased by one
+//		assertEquals("Backstage passes to a TAFKAL80ETC concert",50, quality);
+//	}
 	
 	@Test
 	public void exampleTestArr() {
